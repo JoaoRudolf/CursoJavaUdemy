@@ -23,7 +23,7 @@ public class PainelTabuleiro extends JPanel {
 				if(e.isGanhou()) {
 					JOptionPane.showMessageDialog(this, "Ganhou, coisa linda");
 				} else {
-					JOptionPane.showMessageDialog(this, "Perdeu! Explodiu tudo. Não fique triste. Como dizia o Raul: tente outra vez!");
+					JOptionPane.showMessageDialog(this, "Perdeu! Não fique triste. Como dizia o Raul: tente outra vez!");
 				}
 				tabuleiro.reiniciar();
 			});
