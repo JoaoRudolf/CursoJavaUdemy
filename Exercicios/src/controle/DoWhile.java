@@ -8,11 +8,11 @@ public class DoWhile {
 		
 		Scanner entrada = new Scanner(System.in);
 		
-		String texto = "por favor";
+		String texto;
 		
 		do {
-			System.out.println("Você precisa falar "
-					+ "as palavras mágicas...");
+			System.out.println("VocÃª precisa falar "
+					+ "as palavras mÃ¡gicas...");
 			System.out.print("Quer sair? ");
 			texto = entrada.nextLine();			
 		} while(!texto.equalsIgnoreCase("por favor"));
