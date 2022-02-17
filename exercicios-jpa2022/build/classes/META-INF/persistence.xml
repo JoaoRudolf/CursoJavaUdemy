@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="JPAPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    
+    <mapping-file>META-INF/consultas.xml</mapping-file>
+    
+    <class>modelo.basico.Usuario</class>
+    <class>modelo.basico.Produto</class>
+    <class>modelo.umpraum.Cliente</class>
+    <class>modelo.umpraum.Assento</class>
+    <class>modelo.umpramuitos.ItemPedido</class>
+    <class>modelo.umpramuitos.Pedido</class>
+    <class>modelo.muitospramuitos.Tio</class>
+    <class>modelo.muitospramuitos.Sobrinho</class>
+    <class>modelo.muitospramuitos.Ator</class>
+    <class>modelo.muitospramuitos.Filme</class>
+    <class>modelo.composicao.Endereco</class>
+    <class>modelo.composicao.Fornecedor</class>
+    <class>modelo.composicao.Funcionario</class>
+    <class>modelo.heranca.Aluno</class>
+    <class>modelo.heranca.AlunoBolsista</class>
+    <class>modelo.heranca.AlunoFeliz</class>
+    
+    <properties>
+      <property name="hibernate.archive.autodetection" value="class"/>
+     <!--   <property name="" value=""/> -->
+      <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/postgres"/>
+      <property name="hibernate.connection.user" value="postgres"/>
+      <property name="hibernate.connection.password" value="missi34"/>
+      <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+      
+      
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="use_sql_comments" value="false"/>
+     
+      
+    </properties>
+  </persistence-unit>
+</persistence>
